@@ -79,3 +79,33 @@ body {
   padding: 5px;
   margin: 5px;
 }
+.article-info {
+  position: relative;
+}
+.article-info > a:first-child::before {
+  color: rgba(0, 0, 0, 0.5);
+  content: "▲";
+  font-size: 0.85em;
+  height: 2px;
+  position: relative;
+  width: 2px;
+  top: -2px;
+}
+a.article-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75em;
+}
+
+.article-points-tracker li {
+  display: inline-block;
+  font-size: 0.75em;
+  list-style: none;
+}
+.article-points-tracker li,
+.article-points-tracker li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.article-points-tracker li:first-child ~ li {
+  border-left: 1px solid  rgba(0, 0, 0, 0.5) ;
+  padding-left: 4px ;
+}
