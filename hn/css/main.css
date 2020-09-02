@@ -20,6 +20,7 @@ body {
   background-color: #fb6517;
   display: flex;
   margin: 1px;
+  padding: 5px 4px;
 }
 .header a {
   text-decoration: none;
