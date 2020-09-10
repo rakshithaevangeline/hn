@@ -1,80 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-</head>
-  <body>
-    <div class="page">
-      <header class="header">
-
-        <div class="header-home-nav">
-          <a href="./index.html" class="header-logo">
-            <img src="./images/hn-logo.png" alt="Logo">
-          </a>
-          <a href="./index.html" class="header-title">Hacker News</a>
-        </div>
-
-        <nav class="header-nav">
-          <ul class="nav-links">
-            <li><a href="https://example.com/">new</a></li>
-            <li><a href="https://example.com/">past</a></li>
-            <li><a href="https://example.com/">comments</a></li>
-            <li><a href="https://example.com/">ask</a></li>
-            <li><a href="https://example.com/">show</a></li>
-            <li><a href="https://example.com/">jobs</a></li>
-            <li><a href="https://example.com/">submit</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-login">
-          <a href="https://example.com/" class="nav-links login">login</a>
-        </div>
-      </header>
-
-      <div class="article-section">
-        <ol class="article-list">
-          <li class="article-info">
-            <a href="https://example.com/" class="article-excerpt">TSA tries out another (illegal) biometric “ID verification” system</a>
-            <a href="https://example.com/" class="article-link">(example.com)</a>
-            <ul class="article-points-tracker">
-              <li>225 points by
-                <a href="https://example.com/">walterbell</a>
-                <a href="https://example.com/">2 hours ago</a>
-              </li>
-              <li>
-                <a href="https://example.com/">hide</a>
-              </li>
-              <li>
-                <a href="https://example.com/">134 comments</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="article-info">
-            <a href="https://example.com/" class="article-excerpt">TSA tries out another (illegal) biometric “ID verification” system</a>
-            <a href="https://example.com/" class="article-link">(example.com)</a>
-            <ul class="article-points-tracker">
-              <li>225 points by
-                <a href="https://example.com/">walterbell</a>
-                <a href="https://example.com/">2 hours ago</a>
-              </li>
-              <li>
-                <a href="https://example.com/">hide</a>
-              </li>
-              <li>
-                <a href="https://example.com/">134 comments</a>
-              </li>
-            </ul>
-          </li>
-        </ol>
-
-
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: default 
+url: https://example.com/
+author: walterbell
+uploadtime: 2 hours ago
+comments: 134 comments
+---
+<div class="page">
+  <div class="article-section">
+    <ol class="article-list" >
+      {% include article-info.html %}
+      {% include article-info.html %}
+    </ol>
+  </div>
+</div>
