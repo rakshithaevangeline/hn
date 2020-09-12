@@ -192,6 +192,11 @@ a.article-link:hover {
   font-size: 0.85em;
   margin: 1em 0;
 }
+p.comment-body {
+  /* background-color: rebeccapurple; */
+  line-height: 1.3em;
+  font-size: 0.95em;
+}
 .comment-reply {
   font-size: 0.75em;
   margin-bottom: 1em;
@@ -202,3 +207,5 @@ a.article-link:hover {
 .comment-level-2 {
   margin-left: 40px;
 }
+
+/* MOBILE STYLES */
