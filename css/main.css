@@ -8,9 +8,9 @@ body {
 /* PAGE STYLES */
 .page {
   background-color: #f6f6ef;
-  height: 100vh;
-  margin-top: 10px;
+  height: 100%;
   margin: auto;
+  margin-top: 10px;
   width: 85vw;
 }
 
@@ -68,12 +68,48 @@ body {
   padding: 4px;
 }
 
+/* FOOTER STYLES */
+.footer {
+  border-top: 2px solid #fb6517;
+}
+.footer-title {
+  text-align: center;
+  padding: 1.5em;
+}
+.footer-nav {
+  /* padding-bottom: 1.5em; */
+}
+.footer-nav-links {
+  text-align: center;
+}
+.footer-nav-links li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 3px 0 6.5px;
+  margin: 0;
+}
+.footer-nav-links li a {
+  color: #000;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.footer-nav-links li:first-child ~ li {
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.footer-search {
+  /* margin: 1em; */
+  padding: 1em;
+  text-align: center;
+}
+.footer-search-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* ARTICLE SECTION STYLES */
 .article-section {
   margin-left: 2em;
 }
-.article-section a {
-  color: #000;
+.article-info a {
   text-decoration: none;
 }
 .article-list > li {
@@ -93,15 +129,12 @@ body {
   width: 2px;
   top: -2px;
 }
-a.article-link {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 0.75em;
+.article-excerpt {
+  color: #000;
 }
 a.article-link:hover {
   text-decoration-line: underline;
 }
-
-
 .article-points-tracker li {
   display: inline-block;
   font-size: 0.75em;
@@ -118,5 +151,54 @@ a.article-link:hover {
 .article-points-tracker li a:hover {
   text-decoration-line: underline;
 }
+.gray-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75em;
+}
 
-/* COMMENT PAGE STYLES  */
+/* COMMENT PAGE STYLES */
+.comment-article-title {
+  list-style-type: none;
+  padding: 1em 0;
+}
+.text-area {
+ margin: 0 1em;
+}
+.comment-label {
+  background-color: #fff;
+  border-radius: 0.2em;
+  box-shadow: 0 1px 0.2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: monospace ;
+  margin: 1em 1em 0;
+  padding: 0 1em;
+}
+.comment-section {
+  margin: 4em 0;
+}
+@counter-style triangle {
+  system: cyclic;
+  symbols: "\25B2";
+  suffix: " ";
+}
+.comment-section ul {
+ list-style: triangle;
+}
+.comment-title a {
+  color: #000;
+}
+.comment-body {
+  font-size: 0.85em;
+  margin: 1em 0;
+}
+.comment-reply {
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+.comment-level-1 {
+  margin-left: 40px;
+}
+.comment-level-2 {
+  margin-left: 40px;
+}
