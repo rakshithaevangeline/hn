@@ -35,16 +35,23 @@ body {
   margin: 3px;
 }
 .header-logo img {
-  height: 1em;
+  height: 14px;
   text-align: center;
-  width: 1.2em;
+  width: 16px;
+}
+.header-nav-menu {
+  flex: 1 1 auto;
+  margin: 0 0.5em;
+  /* background-color: red; */
 }
 .header-title {
   color: #000;
+  display: inline-block;
   font-weight: bold;
 }
 .header-nav {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
+  display: inline-block;
 }
 .nav-links li {
   display: inline-block;
@@ -193,7 +200,6 @@ a.article-link:hover {
   margin: 1em 0;
 }
 p.comment-body {
-  /* background-color: rebeccapurple; */
   line-height: 1.3em;
   font-size: 0.95em;
 }
@@ -209,3 +215,64 @@ p.comment-body {
 }
 
 /* MOBILE STYLES */
+@media (max-width: 800px) {
+
+  /* GLOBAL STYLES */
+    html {
+      margin-top: -10px;
+    }
+    body {
+      font-size: 1rem;
+    }
+  /* PAGE STYLES */
+  .page {
+    width: 100vw;
+
+  } 
+  /* HEADER STYLES */
+  .nav-links li {
+    padding: 0 5px ;
+  }
+  .nav-links li:first-child {
+    padding: 0 3px 0 0 ;
+  }
+  .nav-links a {
+    font-size: 0.85em;
+  }
+  /* FOOTER STYLES */
+  .footer {
+    font-size: 0.9em;
+  }
+  .footer-search {
+    position: relative;
+  }
+  .footer-search-bar {
+    display: block;
+    margin: auto;
+    margin-top: 0.1em;
+    position: relative;
+    width: 85vw;
+  }
+  /* COMMENT PAGE STYLES */
+  .article-section {
+    padding: 0 2em;
+    margin-left: 0;
+  }
+  .article-info {
+    margin: 0;
+  }
+  .article-info > a:first-child::before {
+    position: absolute;
+    left: -20px ;
+    top: 1px;
+  }
+  .article-points-tracker {
+    margin-top: 0.5em;
+  }
+  .text-area {
+    margin: 0;
+   }
+  .comment-label {
+    margin: 1em 1em 0 0 ;
+  }
+}

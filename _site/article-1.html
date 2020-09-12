@@ -16,20 +16,23 @@
     <a href="./index.html" class="header-logo">
       <img src="./images/hn-logo.png" alt="Logo">
     </a>
-    <a href="./index.html" class="header-title">Hacker News</a>
+
   </div>
 
-  <nav class="header-nav">
-    <ul class="nav-links">
-      <li><a href="https://example.com/">new</a></li>
-      <li><a href="https://example.com/">past</a></li>
-      <li><a href="https://example.com/">comments</a></li>
-      <li><a href="https://example.com/">ask</a></li>
-      <li><a href="https://example.com/">show</a></li>
-      <li><a href="https://example.com/">jobs</a></li>
-      <li><a href="https://example.com/">submit</a></li>
-    </ul>
-  </nav>
+  <div class="header-nav-menu">
+    <a href="./index.html" class="header-title">Hacker News</a>
+    <nav class="header-nav">
+      <ul class="nav-links">
+        <li><a href="https://example.com/">new</a></li>
+        <li><a href="https://example.com/">past</a></li>
+        <li><a href="https://example.com/">comments</a></li>
+        <li><a href="https://example.com/">ask</a></li>
+        <li><a href="https://example.com/">show</a></li>
+        <li><a href="https://example.com/">jobs</a></li>
+        <li><a href="https://example.com/">submit</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <div class="header-login">
     <a href="https://example.com/" class="nav-links login">login</a>
@@ -38,7 +41,7 @@
       <div class="article-section">
         <ol class="comment-article-title">
   <li class="article-info">
-  <a href="https://example.com/" class="article-excerpt">TSA tries out another (illegal) biometric “ID verification” system</a>
+  <a href="https://example.com/" class="article-excerpt">TSA tries out another “ID verification” system</a>
   <a href="https://example.com/" class="article-link gray-text">(example.com)</a>
   <ul class="article-points-tracker">
     <li class="class="gray-text"">225 points by
@@ -57,7 +60,7 @@
 </ol>
 
 <div class="comment-box">
-  <textarea name="comment" id="add comment" cols="60" rows="6" class="text-area"></textarea>
+  <textarea name="comment" id="add comment" cols="40" rows="8" class="text-area"></textarea>
   <div>
     <label for="add comment" class="comment-label">add comment</label>
   </div>
@@ -136,7 +139,7 @@ From the article: Compared to the first snippet, this one is harder to debug. It
 
     <div class="footer-search">
       <label for="site-search" class="footer-search-label">Search:</label>
-      <input type="search" id="site-search" name="q"
+      <input type="search" id="site-search" class="footer-search-bar" name="q"
         aria-label="Search through site content">
     </div>
   </nav>
